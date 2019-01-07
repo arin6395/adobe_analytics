@@ -2,7 +2,7 @@ import pandas as pd
 from adobe_analytics import Client, ClassificationUploader
 
 client = Client.from_json("my_credentials.json")
-suites = client.suties()
+suites = client.suites()
 suite_ids = list(suites.keys())
 
 dataframe = pd.read_csv("my_classification_data.csv")
